@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #video{
+      width: auto;
+      height: 100%;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    h5{
+      position: absolute;
+      font-size: 1rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+    }
+
+    h5 a{
+      color: blue;
+    }
+  </style>
+
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+<video id="video" width="720" height="560" autoplay muted></video>
+<canvas id="canvas"></canvas>
+<h5>Developed by <a href="https://www.linkedin.com/in/mohamed-aymen-ben-slimen-758610190/">Mohamed Aymen Ben Slimen</a></h5>
+<h3 id="videoStart"></h3>
+<h3 id="ready"></h3>
+</body>
+</html>
